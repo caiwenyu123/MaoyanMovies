@@ -1,0 +1,264 @@
+
+//颜色
+@headerBorder:#d8d8d8;
+@contantRed:#ef4238;
+@contentFont:#333;
+@contantWhite:#fff;
+
+//字体大小
+@navFontsize1:18px;
+@navFontsize2:16px;
+@navFontsize3:14px;
+
+//尺寸
+@navHeight:80px;
+@navliWidth:70px;
+
+#header{
+    width: 100%;
+    height: @navHeight;
+    position: fixed;
+    z-index: 999;
+    border: 1px solid @headerBorder;
+    border-left: none;
+    border-top: none;
+    display: block;
+    background: @contantWhite;
+    #headerinner{
+        width: 1200px;
+        height: @navHeight;
+        margin: 0px auto;
+        a,div{
+            float: left;
+        }
+        a{
+            background: url('../image/logo.png') no-repeat 0;
+            line-height: 100px;
+            height: @navHeight;
+            width:133px;
+        }
+        li:hover{
+            color: @contantRed;
+        }
+        #city {
+            position: relative;
+            height: @navHeight;
+            width: @navliWidth;
+            float: left;
+            font-size: @navFontsize2;
+            line-height: 80px;
+            padding: 0 10px 0 10px;
+            text-align: center;
+            color: @contentFont;
+            left: -10px;
+            #cityName{
+                height: 21px;
+                width: 40px;
+            }
+        }
+        li{
+            float: left;
+            height: @navHeight;
+            width: @navliWidth;
+            font-size: @navFontsize1;
+            color:@contentFont;
+            text-align: center;
+            line-height: 75px; 
+            cursor: pointer;
+        }
+        #shouye{
+            background: @contantRed;
+            color:#fff;
+        }
+        #download{
+            width: 132px;
+            height: 55px;
+            padding-top: 25px;
+            text-align: center;
+            top:-1px;
+            position: relative;
+            left: 36px;
+            border-left: 1px solid transparent;
+            border-right: 1px solid transparent;
+            #phone{
+               display: inline-block;
+               width:15px;
+               height:24px;
+               text-align: center;
+               background:url('../image/phone.png') no-repeat;
+               padding-left: 5px;
+//             border: 1px solid blue;
+               position: absolute;
+               left:15px;
+            }
+            #appdownload{
+                margin: 0px 7px 0px 0px;
+                width: 62.84px;
+                height: 24px;
+                line-height: 24px;
+                font-size: @navFontsize2;
+                position: absolute;
+//              border: 1px solid red;
+                position: absolute;
+                left: 36px;                
+            }           
+            #down2{
+                margin: 0 7px 0 0;
+                position:absolute;
+                top: 34px;
+                display: inline-block;
+                width: 0;
+                height: 0;
+                vertical-align: middle;
+                border-top: 5px solid #666;
+                border-right: 5px solid transparent;
+                border-left: 5px solid transparent;
+                -webkit-transition: all .2s ease;
+                transition: all .2s ease;    
+                left: 107px;
+            //  border: 1px solid cyan;
+            }           
+        }
+        #QRcodes{
+               height: 165px;
+               width: 132px;
+               border: 1px solid @headerBorder;
+               border-top: none;
+               background-color: @contantWhite;
+//             background-image: url('../image/QRcode.png');
+               background-size: 82px 82px;
+               background-repeat: no-repeat;
+               display: none;
+               position: absolute;
+               top: 80px;
+               left: -1px;
+               font-size: @navFontsize3;
+               img{
+                  position: absolute;
+                  left: 25px;
+                  top: 15px;
+               }
+               #code1{
+                   position: absolute;
+                   top: 110px;
+                   left: 30px;
+               }
+               #code2{
+                   position: absolute;
+                   top: 133px;
+                   left: 33px;
+                   color: #999;
+               }
+        }
+        
+        #download:hover #QRcodes{
+            display: block;
+        }
+        #download:hover{
+            border-left:1px solid @headerBorder;
+            border-right:1px solid @headerBorder;
+            cursor: pointer;
+        }
+        #boxSearch{
+            left: 45px;
+            position: relative;
+            #search {
+                height: 38px;
+                width: 158px;
+                padding: 0 40px 0 20px;
+                border: 1px solid #ccc;
+                font-size: 14px;
+                border-radius: 30px;
+                background-color: #faf8fa;
+                overflow: hidden;
+                color:@contentFont;
+                margin-top: 20px;
+                display: inline-block;
+            }
+            #submit{
+                height: 40px;
+                width: 40px;
+                display: inline-block;
+                left: 180px;
+                top: 20px;
+                background-color: #ef4238;
+                border: 0px;
+                border-radius: 30px;
+                position: absolute;
+                background-image: url('../image/search.png');
+            }
+        }
+        #user{
+            height: @navHeight;
+            width: 56px;
+            padding: 0 10px;
+            float: left;
+            position: relative;
+            left: 56px;
+            border-left: 1px solid transparent;
+            border-right: 1px solid transparent;
+            img{
+                height: 40px;
+                width: 40px;
+                margin-top: 20px;
+//              background-size:40px 40px;
+            }
+            #down3{
+                margin: 0 7px;
+                position:absolute;
+                top: 39px;
+                display: inline-block;
+                width: 0;
+                height: 0;
+                vertical-align: middle;
+                border-top: 5px solid #666;
+                border-right: 5px solid transparent;
+                border-left: 5px solid transparent;
+                -webkit-transition: all .2s ease;
+                transition: all .2s ease;                
+            }
+            #login{
+                width: 76px;
+                height: 25px;
+                position: absolute;
+                border: 1px solid @headerBorder;
+                border-top: none;
+                left: -1px;
+                background: @contantWhite;
+                display: none;
+                top:80px;
+                text-align: center;
+                font-size: @navFontsize3;
+                color: @contentFont;
+                line-height: 10px;
+            }
+        }
+        #user:hover{
+            cursor: pointer;
+            border-left: 1px solid @headerBorder;
+            border-right:1px solid @headerBorder;
+        }
+        #user:hover #login{
+            display: block;
+        }
+    }
+}
+
+#city #down{
+    margin: 0 7px;
+    position:absolute;
+    top: 40px;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    vertical-align: middle;
+    border-top: 5px solid #666;
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+    -webkit-transition: all .2s ease;
+    transition: all .2s ease;
+}
+
+#clear{
+    clear: both;  
+}

@@ -1,0 +1,251 @@
+//颜色
+@headerBorder:#d8d8d8;
+@contantRed:#ef4238;
+@contentFont:#333;
+@contantWhite:#fff;
+@rightWhite:#999;
+@movieYellow:#ffb400;
+@rightWhite2:#fafafa;
+
+//字体大小
+@navFontsize1:18px;
+@navFontsize2:16px;
+@navFontsize3:14px;
+@Fontsize17:17px;
+
+//尺寸
+@contentHeight:2036px;
+@contentWidth:1200px;
+@contentmainWidth:770px;
+@mainheadHeight:50px;
+@mainContentHeight:569px;
+@rightWidth:360px;
+@rightHeight:1989px;
+@rightbottomHeight:105px;
+@rightbottomWidth:360px;
+
+#container{
+    padding-top: 120px;
+    width: 100%;
+    height:@contentHeight;
+    #content{
+        width: @contentWidth;
+        height: @contentHeight;
+        margin: 0 auto;
+//      border: 1px solid yellow;
+        position: relative;
+        #main{ 
+            width:@contentmainWidth;
+            height:@contentHeight;
+//          border: 1px solid gray;
+            position: absolute;
+            #mainHead{               
+                width:@contentmainWidth;
+                height:@mainheadHeight;
+//              border: 1px solid palegreen;
+                margin: 0px auto;
+                color: @contantRed;
+                position: relative;
+                .headTitle{
+                    font-size:26px;
+                    position: absolute;
+                    top: 19px;
+                    left: 10px;
+                }       
+                #mainHeadleft{
+                    .all{
+                        position: absolute;
+                        left: 710px;
+                        top:32px;
+                        font-size: @navFontsize3;
+                    }
+                    .all:hover{
+                        cursor:pointer;
+                        text-decoration: underline;
+                    }
+                    img{
+                        width: 8px;
+                        height: 14px;
+                        left:740px;
+                        position: absolute;
+                        top: 35px;
+                    }
+                }       
+            }
+            #mainContent{
+                width: @contentmainWidth;
+                .listMovie{
+                    float: left;
+                    position: relative;
+                    margin: 20px 8px 60px 20px;
+                .bgMovie{               
+                    height: 80px;
+                    width: 160px;
+                    top: 140px;
+                    position: absolute;
+                    background: url('../image/bg.png') no-repeat;
+                    .titleMovie{
+                        display: inline-block;
+                        position: absolute;
+                        top:55px;
+                        .nameMovie{
+                            position: absolute;
+                            left: 10px;
+                            color: @contantWhite;
+                            font-size: @navFontsize2;
+                        }
+                        .scoreMovie{                
+                            color: @movieYellow;
+                            float:right;
+                            font-style: italic;
+                            position: absolute;
+                            right: 10px;
+                        }
+                    }        
+                } 
+                    .saleMovie{               
+                        height: 39px;
+                        width: 158px;
+                        border: 1px solid @rightWhite;
+                        text-align: center;
+                        color: @contantRed;  
+                        font-size: @navFontsize3;     
+                        position: absolute;
+                        top: 220px;
+                        line-height: 35px;
+                    }                
+                    .saleMovie:hover{
+                        cursor: pointer;
+                        background: @contantRed;
+                        color: @contantWhite;
+                    }
+                }  
+             }
+         }                
+    }   
+}
+#right{
+    width:@rightWidth;
+    height: @rightHeight;
+//  border: 1px solid blue;
+    position: absolute;
+    right: 0px;    
+    #rightHead{       
+        font-size:26px;
+        position: absolute;
+        top: 19px;
+        color: @contantRed;        
+    }
+}
+.itemMovTop{
+    height: 80px;
+    width: 360px;
+    border: 1px solid gainsboro;
+    border-left: none;
+    position: absolute;
+    top: 70px;  
+    #rankTopleft{
+        height: 78px;
+        width: 120px;
+        display: inline-block;
+    }
+    #rankTopright{
+        height: 78px;
+        width: 238px;
+        display: inline-block;
+        position: absolute;
+        top: 20px;
+        left: 130px;
+        .item{
+            font-size: @navFontsize1;
+            color:@contentFont;
+            display: block;
+        }
+        .num{
+            margin-top: 5px;
+            font-size:@navFontsize3 ;
+            color: @contantRed;
+            display: block;
+        }
+    }  
+}
+.itemMov{   
+    margin-top: 160px;
+}
+.itemMov li{
+    height: 35px;
+    width: 360px;  
+    line-height: 30px;
+    margin-top: 2px;
+    span{
+        margin-left:10px;
+    }
+    .pfRank{
+        float: right;
+        color: @contantRed;
+    }
+    i{
+         font-size: @navFontsize1;
+        color:@rightWhite;
+    }
+}        
+
+
+#movieBoxoffice{
+    height: @rightbottomHeight;
+    width: @rightbottomWidth;
+    background: ghostwhite;
+    position: relative;
+    top: 50px;
+    #movBoxleft{
+        height:95px;
+        width: 40px;
+        background: @contantRed;
+        color: @contantWhite;
+        font-size: @Fontsize17;
+        text-align: center;
+        position: absolute;
+        padding-top: 10px;
+    }
+    #movBoxright{
+        color: @contantRed;
+        position: absolute;
+        height: 125px;
+        left: 50px;
+        #movBoxR:hover{
+            cursor: pointer;
+            text-decoration: underline;
+        }
+        #movright{
+            height: 16px;
+            width: 90px;
+            background: @rightWhite2;
+            position: absolute;
+            top: 36px;
+            left: 220px;
+            font-size: @navFontsize3;
+            img{
+                position: absolute;
+                top: 3px;
+            }
+        }
+        #boxofficeNum{
+            font-size:30px;
+            position: absolute;
+            top: 20px;
+        }
+        #boxofficeStr{
+            font-size: @navFontsize3;
+            position: absolute;
+            top: 36px;
+            left: 95px;
+        }
+        p{
+            width: @rightbottomWidth;
+            font-size: @navFontsize3;
+            color: @rightWhite;
+            position: absolute;
+            top: 70px;
+        }
+    }
+}

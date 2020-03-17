@@ -1,0 +1,2 @@
+Movies/node_modules/*  //忽略Movies目录下的node_modules文件
+MoviesHTML/node_modules/*
