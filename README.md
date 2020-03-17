@@ -1,4 +1,4 @@
-![image](MoviesHTML/image.jpg)
+![image](https://github.com/caiwenyu123/MaoyanMovies/blob/master/MoviesHTML/image.JPG)
 
 ##  创建项目
 
